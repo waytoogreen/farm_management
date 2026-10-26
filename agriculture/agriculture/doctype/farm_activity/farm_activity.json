@@ -1,0 +1,244 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FA-.#####",
+ "creation": "2026-09-30 16:32:27.254623",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "activity_date",
+  "farmer",
+  "crop",
+  "description",
+  "remarks",
+  "column_break_tqdu",
+  "crop_cycle",
+  "plot",
+  "activity_type",
+  "quantity",
+  "photo",
+  "labour_labour_management_section",
+  "no_of_labourers",
+  "male_workers",
+  "female_workers",
+  "other_workers",
+  "column_break_lche",
+  "labour_duration",
+  "labour_uom",
+  "wage_per_person",
+  "total_labour_cost",
+  "irrigation_section",
+  "irrigation_method",
+  "duration_hours",
+  "column_break_hzvu",
+  "water_quantity",
+  "water_source",
+  "inputs_and_cost_section",
+  "inputs_used",
+  "product_cost",
+  "other_cost",
+  "total_cost"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "activity_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "column_break_tqdu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop Cycle",
+   "options": "Crop Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Plot"
+  },
+  {
+   "fieldname": "activity_type",
+   "fieldtype": "Select",
+   "label": "Activity",
+   "options": "\nLand Preparation\nSowing\nTransplanting\nIrrigation\nWeeding\nFertilizer Application\nOrganic Input Application\nPest Management\nDisease Management Spraying\nPruning\nHarvesting\nOther"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "labour_labour_management_section",
+   "fieldtype": "Section Break",
+   "label": "Labour (Labour Management)"
+  },
+  {
+   "fieldname": "no_of_labourers",
+   "fieldtype": "Int",
+   "label": "Number of Workers"
+  },
+  {
+   "fieldname": "male_workers",
+   "fieldtype": "Int",
+   "label": "Male Workers"
+  },
+  {
+   "fieldname": "female_workers",
+   "fieldtype": "Int",
+   "label": "Female Workers"
+  },
+  {
+   "fieldname": "other_workers",
+   "fieldtype": "Int",
+   "label": "Other Workers"
+  },
+  {
+   "fieldname": "column_break_lche",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "labour_duration",
+   "fieldtype": "Float",
+   "label": "Labour Days / Hours"
+  },
+  {
+   "fieldname": "labour_uom",
+   "fieldtype": "Select",
+   "label": "Labour Unit",
+   "options": "\nDays\nHours"
+  },
+  {
+   "fieldname": "wage_per_person",
+   "fieldtype": "Currency",
+   "label": "Wage per Person"
+  },
+  {
+   "fieldname": "total_labour_cost",
+   "fieldtype": "Currency",
+   "label": "Total Labour Cost"
+  },
+  {
+   "depends_on": "eval:doc.activity_type=='Irrigation'",
+   "fieldname": "irrigation_section",
+   "fieldtype": "Section Break",
+   "label": "Irrigation"
+  },
+  {
+   "fieldname": "irrigation_method",
+   "fieldtype": "Select",
+   "label": "Irrigation Method",
+   "options": "\nDrip\nSprinkler\nFlood\nFurrow\nManual"
+  },
+  {
+   "fieldname": "duration_hours",
+   "fieldtype": "Float",
+   "label": "Duration (Hours)"
+  },
+  {
+   "fieldname": "column_break_hzvu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "water_quantity",
+   "fieldtype": "Float",
+   "label": "Water Quantity"
+  },
+  {
+   "fieldname": "water_source",
+   "fieldtype": "Select",
+   "label": "Water Source",
+   "options": "\nBorewell\nCanal\nTank\nRiver\nRainwater"
+  },
+  {
+   "fieldname": "inputs_and_cost_section",
+   "fieldtype": "Section Break",
+   "label": "Inputs and Cost"
+  },
+  {
+   "fieldname": "inputs_used",
+   "fieldtype": "Table",
+   "label": "Inputs Used",
+   "options": "Farm Activity Input"
+  },
+  {
+   "fieldname": "product_cost",
+   "fieldtype": "Currency",
+   "label": "Product Cost"
+  },
+  {
+   "fieldname": "other_cost",
+   "fieldtype": "Currency",
+   "label": "Other Cost"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-30 17:56:26.105429",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farm Activity",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

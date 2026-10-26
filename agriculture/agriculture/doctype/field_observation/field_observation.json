@@ -1,0 +1,123 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FO-.#####",
+ "creation": "2026-09-30 18:03:51.900560",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "observation_date",
+  "crop_cycle",
+  "plot",
+  "rainfall_mm",
+  "temperature_c",
+  "column_break_fche",
+  "weather_condition",
+  "field_condition",
+  "waterlogging",
+  "drought_stress",
+  "pest_occurrence",
+  "section_break_jjjb",
+  "farmer_remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "observation_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Plot"
+  },
+  {
+   "fieldname": "rainfall_mm",
+   "fieldtype": "Float",
+   "label": "Rainfall (mm)"
+  },
+  {
+   "fieldname": "temperature_c",
+   "fieldtype": "Float",
+   "label": "Temperature (\u00b0C)"
+  },
+  {
+   "fieldname": "column_break_fche",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weather_condition",
+   "fieldtype": "Select",
+   "label": "Weather Condition",
+   "options": "\nSunny\nCloudy\nRainy\nWindy Humid / Other"
+  },
+  {
+   "fieldname": "field_condition",
+   "fieldtype": "Select",
+   "label": "Field Condition",
+   "options": "\nDry\nMoist\nWet\nWaterlogged\nCracked"
+  },
+  {
+   "default": "0",
+   "fieldname": "waterlogging",
+   "fieldtype": "Check",
+   "label": "Waterlogging"
+  },
+  {
+   "default": "0",
+   "fieldname": "drought_stress",
+   "fieldtype": "Check",
+   "label": "Drought Stress"
+  },
+  {
+   "default": "0",
+   "fieldname": "pest_occurrence",
+   "fieldtype": "Check",
+   "label": "Pest Occurrence"
+  },
+  {
+   "fieldname": "section_break_jjjb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "farmer_remarks",
+   "fieldtype": "Small Text",
+   "label": "Farmer Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-30 18:07:20.560672",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Field Observation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

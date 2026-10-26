@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FRM-.####",
+ "creation": "2026-09-30 15:56:45.059137",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "farmer_name",
+  "village",
+  "district",
+  "total_land_area",
+  "soil_type",
+  "status",
+  "column_break_sxhz",
+  "mobile_number",
+  "block__taluk",
+  "land_ownership",
+  "irrigation_source",
+  "farming_type",
+  "main_crops_cultivated",
+  "farm_location_details_section",
+  "survey_details",
+  "farm_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Farmer name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "column_break_sxhz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "mobile_number",
+   "fieldtype": "Phone",
+   "label": "Mobile number"
+  },
+  {
+   "fieldname": "block__taluk",
+   "fieldtype": "Data",
+   "label": "Block / Taluk"
+  },
+  {
+   "fieldname": "land_ownership",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Land Ownership",
+   "options": "\nOwned\nLeased"
+  },
+  {
+   "fieldname": "total_land_area",
+   "fieldtype": "Float",
+   "label": "Total land area"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "label": "Soil Type",
+   "options": "\nRed\nBlack\nAlluvial\nSandy\nLoamy\nClay\nOther"
+  },
+  {
+   "fieldname": "irrigation_source",
+   "fieldtype": "Select",
+   "label": "Irrigation Source",
+   "options": "\nBorewell\nOpen Well\nCanal\nTank\nRiver\nRainfed\nOther"
+  },
+  {
+   "fieldname": "farming_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Farming Type",
+   "options": "\nOrganic\nConventional\nIntegrated"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "farm_location_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farm Location Details"
+  },
+  {
+   "fieldname": "survey_details",
+   "fieldtype": "Small Text",
+   "label": "Farm Location / Survey Details"
+  },
+  {
+   "fieldname": "farm_location",
+   "fieldtype": "Geolocation",
+   "label": "Farm Location (Map)"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nInactive"
+  },
+  {
+   "fieldname": "main_crops_cultivated",
+   "fieldtype": "Table MultiSelect",
+   "label": "Main Crops Cultivated",
+   "options": "Farmer Crop"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-03 10:48:25.011393",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farmer",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

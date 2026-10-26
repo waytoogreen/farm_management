@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FS-.#####",
+ "creation": "2026-10-03 10:05:08.245336",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dxen",
+  "amended_from",
+  "sale_date",
+  "crop_cycle",
+  "farmer",
+  "harvest_entry",
+  "buyer",
+  "market_location",
+  "column_break_jiub",
+  "quantity_sold",
+  "rate_per_unit",
+  "total_value",
+  "transport_cost",
+  "payment_status",
+  "amount_received"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dxen",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Farm Sale",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "sale_date",
+   "fieldtype": "Date",
+   "label": "Sale Date"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "harvest_entry",
+   "fieldtype": "Link",
+   "label": "Harvest Entry",
+   "options": "Harvest Entry"
+  },
+  {
+   "fieldname": "buyer",
+   "fieldtype": "Link",
+   "label": "Buyer",
+   "options": "Farm Buyer"
+  },
+  {
+   "fieldname": "market_location",
+   "fieldtype": "Data",
+   "label": "Market / Location"
+  },
+  {
+   "fieldname": "column_break_jiub",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity_sold",
+   "fieldtype": "Float",
+   "label": "Quantity Sold"
+  },
+  {
+   "fieldname": "rate_per_unit",
+   "fieldtype": "Currency",
+   "label": "Price per Unit"
+  },
+  {
+   "fieldname": "total_value",
+   "fieldtype": "Currency",
+   "label": "Total Sales Value"
+  },
+  {
+   "fieldname": "transport_cost",
+   "fieldtype": "Currency",
+   "label": "Transport Cost"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "\nPaid\nPartial\nPending"
+  },
+  {
+   "fieldname": "amount_received",
+   "fieldtype": "Currency",
+   "label": "Amount Received"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-03 10:10:52.720121",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farm Sale",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

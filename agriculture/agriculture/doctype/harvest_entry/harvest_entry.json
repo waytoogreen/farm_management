@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "HE-.#####",
+ "creation": "2026-10-01 11:50:48.672898",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_dhl0",
+  "amended_from",
+  "harvest_date",
+  "crop_cycle",
+  "crop",
+  "plot",
+  "harvest_number",
+  "harvest_quantity",
+  "column_break_vavz",
+  "uom",
+  "grade",
+  "damaged_quantity",
+  "usable_quantity",
+  "quantity_sold",
+  "balance_quantity"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_dhl0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Harvest Entry",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "harvest_date",
+   "fieldtype": "Date",
+   "label": "Harvest Date"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fetch_from": "crop_cycle.crop",
+   "fetch_if_empty": 1,
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop",
+   "read_only": 1
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Plot"
+  },
+  {
+   "fieldname": "harvest_number",
+   "fieldtype": "Int",
+   "label": "Harvest Number"
+  },
+  {
+   "fieldname": "harvest_quantity",
+   "fieldtype": "Float",
+   "label": "Harvest Quantity"
+  },
+  {
+   "fieldname": "column_break_vavz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "label": "Grade / Quality",
+   "options": "\nA\nB\nC\nRejected"
+  },
+  {
+   "fieldname": "damaged_quantity",
+   "fieldtype": "Float",
+   "label": "Damaged Quantity"
+  },
+  {
+   "fieldname": "usable_quantity",
+   "fieldtype": "Float",
+   "label": "Usable Quantity"
+  },
+  {
+   "fieldname": "quantity_sold",
+   "fieldtype": "Float",
+   "label": "Quantity Sold"
+  },
+  {
+   "fieldname": "balance_quantity",
+   "fieldtype": "Float",
+   "label": "Balance Quantity"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-10-03 10:04:12.905331",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Harvest Entry",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

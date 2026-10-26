@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-30 17:42:16.121634",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "input_item",
+  "category",
+  "variety",
+  "quantity",
+  "uom",
+  "supplier",
+  "column_break_flpz",
+  "rate",
+  "product_cost",
+  "application_date",
+  "application_method",
+  "target_pest_disease"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "input_item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Input Item",
+   "options": "Farm Input Item"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "input_item.input_category",
+   "fetch_if_empty": 1,
+   "fieldname": "category",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Category",
+   "read_only": 1
+  },
+  {
+   "fieldname": "variety",
+   "fieldtype": "Data",
+   "label": "Variety"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Unit",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_flpz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "columns": 1,
+   "fieldname": "product_cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Product Cost"
+  },
+  {
+   "fieldname": "application_date",
+   "fieldtype": "Date",
+   "label": "Application Date"
+  },
+  {
+   "fieldname": "application_method",
+   "fieldtype": "Select",
+   "label": "Application Method",
+   "options": "\nBroadcasting\nFoliar Spray\nDrenching\nBasal\nTop Dressing\nDrip\nOther"
+  },
+  {
+   "columns": 2,
+   "fieldname": "supplier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Supplier"
+  },
+  {
+   "fieldname": "target_pest_disease",
+   "fieldtype": "Data",
+   "label": "Target Pest / Disease"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-30 17:54:22.413126",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farm Activity Input",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,153 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CH-.YYYY.-.####",
+ "creation": "2026-09-30 17:57:16.188640",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "report_date",
+  "crop_cycle",
+  "crop",
+  "column_break_qlle",
+  "plot",
+  "farmer",
+  "section_break_xpfm",
+  "issue_type",
+  "pest__disease",
+  "symptoms",
+  "severity",
+  "affected_area_percent",
+  "column_break_hrgj",
+  "photo",
+  "action_taken",
+  "input_used",
+  "status",
+  "follow_up_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "report_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "label": "Crop Cycle",
+   "options": "Crop Cycle"
+  },
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "label": "Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Plot"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "column_break_qlle",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_xpfm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "issue_type",
+   "fieldtype": "Select",
+   "label": "Issue Type",
+   "options": "\nPest\nDisease\nNutrient Deficiency\nOther"
+  },
+  {
+   "fieldname": "pest__disease",
+   "fieldtype": "Data",
+   "label": "Pest / Disease"
+  },
+  {
+   "fieldname": "symptoms",
+   "fieldtype": "Small Text",
+   "label": "Symptoms"
+  },
+  {
+   "fieldname": "severity",
+   "fieldtype": "Select",
+   "label": "Severity",
+   "options": "\nLow\nMedium\nHigh"
+  },
+  {
+   "fieldname": "affected_area_percent",
+   "fieldtype": "Percent",
+   "label": "Affected Area (%)"
+  },
+  {
+   "fieldname": "column_break_hrgj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "fieldname": "action_taken",
+   "fieldtype": "Small Text",
+   "label": "Action Taken"
+  },
+  {
+   "fieldname": "input_used",
+   "fieldtype": "Link",
+   "label": "Input Used",
+   "options": "Farm Input Item"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nUnder Monitoring\nTreated\nResolved\nEscalated"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow-up Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-09-30 18:02:40.235110",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Crop Health Report",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

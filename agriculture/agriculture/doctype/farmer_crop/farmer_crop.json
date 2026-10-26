@@ -1,0 +1,36 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-09-30 16:16:56.245174",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "crop"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop",
+   "options": "Crop",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-09-30 16:17:26.617829",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farmer Crop",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

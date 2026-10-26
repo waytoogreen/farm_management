@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "FE-.#####",
+ "creation": "2026-09-30 18:07:40.932555",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "expense_date",
+  "farmer",
+  "farm",
+  "plot",
+  "crop_cycle",
+  "receipt",
+  "column_break_wtse",
+  "category",
+  "amount",
+  "source_activity",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "expense_date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer"
+  },
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "label": "Farm",
+   "options": "Farm"
+  },
+  {
+   "fieldname": "plot",
+   "fieldtype": "Link",
+   "label": "Plot",
+   "options": "Plot"
+  },
+  {
+   "fieldname": "crop_cycle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Crop Cycle",
+   "options": "Crop Cycle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_wtse",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "category",
+   "fieldtype": "Select",
+   "label": "Expense Category",
+   "options": "\nSeeds\nFertilizer-Manure\nPlant Protection\nLabour\nIrrigation\nMachinery\nFuel\nElectricity\nTransport\nPackaging\nOther"
+  },
+  {
+   "fieldname": "receipt",
+   "fieldtype": "Attach",
+   "label": "Receipt"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "fieldname": "source_activity",
+   "fieldtype": "Link",
+   "label": "Source Activity",
+   "options": "Farm Activity"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-03 13:45:42.063925",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Farm Expense",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

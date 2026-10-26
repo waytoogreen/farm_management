@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PLT-.####",
+ "creation": "2026-09-30 16:24:29.723841",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "farm",
+  "farmer",
+  "survey_number",
+  "area",
+  "current_crop",
+  "sowing_date",
+  "column_break_uabs",
+  "area_uom",
+  "soil_type",
+  "irrigation_facility",
+  "previous_crop",
+  "cultivation_method"
+ ],
+ "fields": [
+  {
+   "fieldname": "farm",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Farm",
+   "options": "Farm",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "farm.farmer",
+   "fetch_if_empty": 1,
+   "fieldname": "farmer",
+   "fieldtype": "Link",
+   "label": "Farmer",
+   "options": "Farmer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "survey_number",
+   "fieldtype": "Data",
+   "label": "Survey Number"
+  },
+  {
+   "fieldname": "area",
+   "fieldtype": "Float",
+   "label": "Area",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_crop",
+   "fieldtype": "Link",
+   "label": "Current Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "sowing_date",
+   "fieldtype": "Date",
+   "label": "Sowing / Transplanting Date"
+  },
+  {
+   "fieldname": "column_break_uabs",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "area_uom",
+   "fieldtype": "Select",
+   "label": "Area Unit",
+   "options": "\nAcre\nHectare\nCent"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "label": "Soil Type",
+   "options": "\nRed\nBlack\nAlluvial\nSandy\nLoamy\nClay\nOther"
+  },
+  {
+   "fieldname": "irrigation_facility",
+   "fieldtype": "Select",
+   "label": "Irrigation Facility",
+   "options": "\nDrip\nSprinkler\nFlood\nBorewell\nCanal\nRainfed"
+  },
+  {
+   "fieldname": "previous_crop",
+   "fieldtype": "Link",
+   "label": "Previous Crop",
+   "options": "Crop"
+  },
+  {
+   "fieldname": "cultivation_method",
+   "fieldtype": "Select",
+   "label": "Cultivation Method",
+   "options": "\nOrganic\nConventional\nIntegrated"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-10-03 10:56:55.355807",
+ "modified_by": "Administrator",
+ "module": "Agriculture",
+ "name": "Plot",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
